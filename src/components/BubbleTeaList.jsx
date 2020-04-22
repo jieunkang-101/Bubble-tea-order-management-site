@@ -2,7 +2,6 @@ import React from "react";
 import BubbleTea from "./BubbleTea";
 import PropTypes from "prop-types";
 import BubbleTeaData from "../BubbleTeaData"
-import { v1 } from 'uuid';
 
 function BubbleTeaList(props) {
   return(
@@ -14,6 +13,7 @@ function BubbleTeaList(props) {
           ingredient = {bubbleTea.ingredient}
           quantity = {bubbleTea.quantity} 
           sellTea={props.sellTea}
+          restockTea={props.restockTea}
           />
   )}
   </>
@@ -22,7 +22,8 @@ function BubbleTeaList(props) {
 
 BubbleTeaList.propTypes = {
   bubbleTeaList: PropTypes.array,
-  sellTea: PropTypes.func
+  sellTea: PropTypes.func,
+  restockTea: PropTypes.func
 }
 
 export default BubbleTeaList;

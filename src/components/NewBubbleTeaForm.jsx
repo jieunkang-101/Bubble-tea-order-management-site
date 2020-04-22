@@ -1,12 +1,12 @@
 import React from "react";
-import { v1 } from 'uuid';
+import { v4 } from 'uuid';
 import PropTypes from "prop-types";
 
 function NewBubbleTeaForm(props){
 
   function handleNewBubbleTeaFormSubmission(event) {
     event.preventDefault();
-    props.onNewBubbleTeaCreation({name: event.target.name.value, ingredient: event.target.ingredient.value, quantity: event.target.quantity.value, key: v1(), id: event.target.id.value});
+    props.onNewBubbleTeaCreation({name: event.target.name.value, ingredient: event.target.ingredient.value, quantity: event.target.quantity.value, key: v4(), id: event.target.id.value});
   }
 
   return (
@@ -24,7 +24,7 @@ function NewBubbleTeaForm(props){
           type='number'
           name='quantity'
           placeholder='Quantity.' />
-        <button type='submit'>Restock</button>
+        <button type='submit'>Add New Tea</button>
       </form>
     </React.Fragment>
   );

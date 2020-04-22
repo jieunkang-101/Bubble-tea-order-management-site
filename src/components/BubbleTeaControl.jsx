@@ -26,11 +26,20 @@ class BubbleTeaControl extends React.Component {
   //   this.setState({selectedBubbleTea: selectedBubbleTea})
   // }
 
-  handleSellTea = (id) => {
+  handleRestockTea = (key) => {
     let newBubbleTeaList = this.state.masterBubbleTeaList;
-    newBubbleTeaList[id].quantity --;
+    //when adding more than 1, it adds number as string
+    newBubbleTeaList[key].quantity ++ ;
     this.setState({masterBubbleTeaList: newBubbleTeaList});
   }
+
+
+  handleSellTea = (key) => {
+    let newBubbleTeaList = this.state.masterBubbleTeaList;
+    newBubbleTeaList[key].quantity --;
+    this.setState({masterBubbleTeaList: newBubbleTeaList});
+  }
+
 
   handleAddingNewBubbleTeaToList = (newBubbleTea) => {
     const newMasterBubbleTeaList = this.state.masterBubbleTeaList.concat(newBubbleTea);
@@ -48,8 +57,8 @@ class BubbleTeaControl extends React.Component {
     } else {
       return {
         buttonText: "Add New Tea",
-        component: <BubbleTeaList />,
-        order : <BubbleTeaList bubbleTeaList={this.state.masterBubbleTeaList} sellTea={this.handleSellTea} />
+        //component: <BubbleTeaList />,
+        order : <BubbleTeaList bubbleTeaList={this.state.masterBubbleTeaList} sellTea={this.handleSellTea} restockTea={this.handleRestockTea} />
       };
     }
   };
