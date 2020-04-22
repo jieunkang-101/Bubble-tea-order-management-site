@@ -22,7 +22,7 @@ A user should be able to do the following:
 
 ### Sreenshot
 
-<image src="src/img/movie-site.jpg" width="550px" />
+<image src="src/img/diagram.jpg" width="550px" />
 
 ## 2. Development
 ### Tech stack:
