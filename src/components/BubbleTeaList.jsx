@@ -3,6 +3,7 @@ import BubbleTea from "./BubbleTea";
 import PropTypes from "prop-types";
 import BubbleTeaData from "../BubbleTeaData"
 
+
 function BubbleTeaList(props) {
   return(
     <><hr/>{props.bubbleTeaList.map((bubbleTea, index) => 

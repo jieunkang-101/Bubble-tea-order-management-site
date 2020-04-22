@@ -26,17 +26,20 @@ class BubbleTeaControl extends React.Component {
   //   this.setState({selectedBubbleTea: selectedBubbleTea})
   // }
 
-  handleRestockTea = (key) => {
+  handleRestockTea = (id) => {
+    console.log('restock' + id);
     let newBubbleTeaList = this.state.masterBubbleTeaList;
     //when adding more than 1, it adds number as string
-    newBubbleTeaList[key].quantity ++ ;
+    console.log(newBubbleTeaList[id]);
+    newBubbleTeaList[id].quantity ++ ;
     this.setState({masterBubbleTeaList: newBubbleTeaList});
   }
 
 
-  handleSellTea = (key) => {
+  handleSellTea = (id) => {
+    console.log('sell' + id);
     let newBubbleTeaList = this.state.masterBubbleTeaList;
-    newBubbleTeaList[key].quantity --;
+    newBubbleTeaList[id].quantity --;
     this.setState({masterBubbleTeaList: newBubbleTeaList});
   }
 

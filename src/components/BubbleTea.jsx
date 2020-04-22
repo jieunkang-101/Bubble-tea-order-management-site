@@ -18,6 +18,7 @@ function BubbleTea(props) {
       <p>Name : {props.name}</p>
       <p>Ingredient : {props.ingredient}</p>
       <p>Quantity : {props.quantity}</p>
+      <p>Key : {props.key}</p>
       <button onClick={handleSellTea}>Sell</button>
       <button onClick={handleRestockTea}>Restock</button>
       <hr />

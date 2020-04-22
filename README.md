@@ -31,7 +31,7 @@ A user should be able to do the following:
 
 ### To run dev mode locally:
 ```bash
-  $ git clone https://github.com/jiwon-seattle/merchant-site.git
+  $ git clone https://github.com/jiwon-seattle/Bubble-tea-shop.git
   $ cd merchant-site
   $ npm install  
   # After successfull pkg installtion
