@@ -1,6 +1,7 @@
 import React from 'react';
 
 function NavBar(){
-  return (<><h1 >Movie Ticket Site</h1></>);
+  return (<><h1 >Bubble Tea</h1> </>
+    );
 }
 export default NavBar;

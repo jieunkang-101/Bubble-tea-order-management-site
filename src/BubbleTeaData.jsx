@@ -1,4 +1,3 @@
-
 const BubbleTeaData = [
   {
   name: "Black Milk Tea",
@@ -12,7 +11,7 @@ const BubbleTeaData = [
   },
   {
     name: "Matcha milk Tea",
-    description: "matcha",
+    description: "match",
     quantity: 6,
   }
 

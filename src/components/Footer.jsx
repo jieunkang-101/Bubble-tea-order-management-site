@@ -1,9 +1,10 @@
 import React from 'react';
+import './App.css';
 
-function Footer(){
+function Footer(props){
   return (
     <React.Fragment>
-    <div>&#9400; Jieun & Jiwon </div>
+    <div className="footer">&#9400; Jieun & Jiwon </div>
     </React.Fragment>
   );  
 }
