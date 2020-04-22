@@ -1,19 +1,20 @@
 import React from "react";
 import Movie from "./Movie";
+import Item from "../MovieData"
 import PropTypes from "prop-types";
-import { v4 } from 'uuid';
+//import { v4 } from 'uuid';
 
 function MovieList(props) {
   return(
-    <>{props.movieList.map((movie, id) => 
-      <p>
-        <Movie
-          key = {id = v4()}
-          name = {movie.name}
-          description = {movie.description}
-          quantity = {movie.quantity} />
-      </p>
-  )}
+  //   <><hr/>{props.map((movie, id) => 
+  //       // <Movie
+  //       //   key = {id}
+  //       //   //item = {item}
+  //       //   description = {movie.description}
+  //       //   quantity = {movie.quantity} 
+  //       //   />
+  // )}
+  <>
   </>);
 }
 

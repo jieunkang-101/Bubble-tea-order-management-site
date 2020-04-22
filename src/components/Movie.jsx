@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 
 function Movie(props) {
   return (
-    <><h3>{props.name}</h3>
+    <>
+    {/* <h3>{props.name}</h3>
       <p>{props.description}</p>
-      <p>{props.quantity}</p></>  
+      <p>{props.quantity}</p> */}
+      <span>{props.item}</span>
+      </>  
   );
-
-
 }
 
 Movie.prototype={
