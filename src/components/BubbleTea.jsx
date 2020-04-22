@@ -9,11 +9,11 @@ function BubbleTea(props) {
 
   return (
     <>
-      <p>Here are bubble tea List!</p>
-      <p>{props.id}</p>
-      <p>{props.name}</p>
-      <p>{props.ingredient}</p>
-      <p>{props.quantity}</p>
+      {/* <p>Here are bubble tea List!</p> */}
+      <p>Id : {props.id}</p>
+      <p>Name : {props.name}</p>
+      <p>Ingredient : {props.ingredient}</p>
+      <p>Quantity : {props.quantity}</p>
       <button onClick={handleSellTea}>Sell</button>
       <hr />
       </>  

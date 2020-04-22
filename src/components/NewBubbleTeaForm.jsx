@@ -1,12 +1,12 @@
 import React from "react";
-import { v4 } from 'uuid';
+import { v1 } from 'uuid';
 import PropTypes from "prop-types";
 
 function NewBubbleTeaForm(props){
 
   function handleNewBubbleTeaFormSubmission(event) {
     event.preventDefault();
-    props.onNewBubbleTeaCreation({name: event.target.name.value, ingredient: event.target.ingredient.value, quantity: event.target.quantity.value, id: v4()});
+    props.onNewBubbleTeaCreation({name: event.target.name.value, ingredient: event.target.ingredient.value, quantity: event.target.quantity.value, key: v1(), id: event.target.id.value});
   }
 
   return (
