@@ -1,21 +1,26 @@
 import React from "react";
 import BubbleTea from "./BubbleTea";
 import PropTypes from "prop-types";
-import BubbleTeaData from "../BubbleTeaData"
+import { v4 } from 'uuid';
 
 
 function BubbleTeaList(props) {
   return(
-    <><hr/>{props.bubbleTeaList.map((bubbleTea, index) => 
+    <><hr/>{props.bubbleTeaList.map((bubbleTea) => 
         <BubbleTea
           key = {bubbleTea.id}
-          id = {index}
+          id = {bubbleTea.id}
           name = {bubbleTea.name}
           ingredient = {bubbleTea.ingredient}
           quantity = {bubbleTea.quantity} 
-          sellTea={props.sellTea}
-          restockTea={props.restockTea}
+          img = {bubbleTea.img}
+          whenBubbleTeaSelected = {props.onBubbleTeaSelection}
+          whenSellClicked={props.onSellingTea}
+          //WhenRestockClicked={props.onRestockingTea}
           />
+          // id = {index}
+          // key = {bubbleTea.key}
+          
   )}
   </>
   );
@@ -23,8 +28,9 @@ function BubbleTeaList(props) {
 
 BubbleTeaList.propTypes = {
   bubbleTeaList: PropTypes.array,
-  sellTea: PropTypes.func,
-  restockTea: PropTypes.func
+  onBubbleTeaSelection: PropTypes.func,
+  onSellingTea: PropTypes.func,
+  onRestockingTea: PropTypes.func
 }
 
 export default BubbleTeaList;
