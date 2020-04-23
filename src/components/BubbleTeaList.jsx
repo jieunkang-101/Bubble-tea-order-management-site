@@ -14,6 +14,7 @@ function BubbleTeaList(props) {
           ingredient = {bubbleTea.ingredient}
           quantity = {bubbleTea.quantity} 
           img = {bubbleTea.img}
+          message = {bubbleTea.message}
           whenBubbleTeaSelected = {props.onBubbleTeaSelection}
           whenSellClicked={props.onSellingTea}
           //WhenRestockClicked={props.onRestockingTea}

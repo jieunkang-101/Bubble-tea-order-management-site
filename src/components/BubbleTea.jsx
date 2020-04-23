@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './App.css';
 
 function BubbleTea(props) {
 
@@ -25,7 +26,8 @@ function BubbleTea(props) {
       <p>Name : {props.name}</p>
       <p>Ingredient : {props.ingredient}</p>
       <p>Quantity : {props.quantity}</p>
-      <p><img src={props.img} alt="Black sugar milk tea" style={{width: 200, height: 200}}></img></p>
+      <p>Message: {props.message}</p>
+      <p><img src={props.img} alt={props.name} style={{width: 200, height: 200}}></img></p>
       {/* <button onClick={handleSellTea}>Sell</button>
       <button onClick={handleRestockTea}>Restock</button> */}
       <hr />

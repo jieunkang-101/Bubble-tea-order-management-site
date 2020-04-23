@@ -6,7 +6,7 @@ function NewBubbleTeaForm(props){
 
   function handleNewBubbleTeaFormSubmission(event) {
     event.preventDefault();
-    props.onNewBubbleTeaCreation({name: event.target.name.value, ingredient: event.target.ingredient.value, quantity: event.target.quantity.value, id: v4()});
+    props.onNewBubbleTeaCreation({name: event.target.name.value, ingredient: event.target.ingredient.value, quantity: parseInt(event.target.quantity.value), id: v4()});
   }
 
   return (
