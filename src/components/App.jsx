@@ -6,9 +6,9 @@ import './App.css';
 
 function App() {
   return(
-    <React.Fragment className={"App"}>
+    <React.Fragment>
       <div><NavBar /></div>
-      <div><BubbleTeaControl /></div>
+      <div class="body"><BubbleTeaControl /></div>
       <div><Footer /></div>
     </React.Fragment>
   );

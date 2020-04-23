@@ -6,7 +6,7 @@ import { v4 } from 'uuid';
 
 function BubbleTeaList(props) {
   return(
-    <><hr/>{props.bubbleTeaList.map((bubbleTea) => 
+    <>{props.bubbleTeaList.map((bubbleTea) => 
         <BubbleTea
           key = {bubbleTea.id}
           id = {bubbleTea.id}

@@ -11,21 +11,24 @@ function NewBubbleTeaForm(props){
 
   return (
     <React.Fragment>
+      <div class="newBubbleTeaForm">
       <form onSubmit={handleNewBubbleTeaFormSubmission}>
         <input
           type='text'
           name='name'
-          placeholder='Bubble tea name' />
+          placeholder='Bubble tea name' class="form-control" />
         <input
           type='text'
           name='ingredient'
-          placeholder='ingredient' />
+          placeholder='ingredient' class="form-control" />
         <input
           type='number'
           name='quantity'
-          placeholder='Quantity.' />
-        <button type='submit'>Add New Tea</button>
+          placeholder='Quantity' class="form-control"/>
+        <br />
+        <button variant="primary" type='submit' class="btn btn-outline-info">Add New Tea</button>{' '}
       </form>
+      </div>
     </React.Fragment>
   );
 }

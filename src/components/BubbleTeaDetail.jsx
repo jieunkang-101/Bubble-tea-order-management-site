@@ -10,16 +10,17 @@ function BubbleTeaDetail(props){
 
   return (
     <React.Fragment>
-      <h1>Bubble Tea Detail</h1>
-      <h3>{bubbleTea.name}</h3>
-      <h3>{bubbleTea.id}</h3>
-      <h4>{bubbleTea.ingredient}</h4>
-      <h4>{bubbleTea.quantity}</h4>
-      <h4>{bubbleTea.message}</h4>
-      <button onClick = {() => props.onSellingTea(props.id)}>Sell</button>
-      <button onClick = {() => props.onRestockingTea(props.id)}>Restock</button>
-      <button onClick = {() => props.onDeletingTea(bubbleTea.id)}>Delete</button>
-      <hr/>
+      <div className="BubbleTeaDetail">
+      <p>Bubble Tea Detail</p>
+      <p>Name : {bubbleTea.name}</p>
+      <p>Item Id : {bubbleTea.id}</p>
+      <p>Ingredient : {bubbleTea.ingredient}</p>
+      <p>Quantity : {bubbleTea.quantity}</p>
+      <p>Current Status : {bubbleTea.message}</p>
+      <button onClick = {() => props.onSellingTea(props.id)} class="btn btn-outline-info">Sell</button>
+      <button onClick = {() => props.onRestockingTea(props.id)} class="btn btn-outline-info">Restock</button>
+      <button onClick = {() => props.onDeletingTea(bubbleTea.id)} class="btn btn-outline-info">Delete</button>
+      </div>
     </React.Fragment>
   );
 }

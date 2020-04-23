@@ -19,20 +19,15 @@ function BubbleTea(props) {
   // <div onClick = {() => props.whenTicketClicked(props.id)}></div>
   
   return (
-    <>
-      {/* <p>Here are bubble tea List!</p> */}
-      <button onClick = {() => props.whenBubbleTeaSelected(props.id)}>
-      <p>Id : {props.id}</p>
+    <div class="bubbleTeaBody">
+      <button class="bubbleTeaList" onClick = {() => props.whenBubbleTeaSelected(props.id)}>
       <p>Name : {props.name}</p>
       <p>Ingredient : {props.ingredient}</p>
       <p>Quantity : {props.quantity}</p>
       <p>Message: {props.message}</p>
       <p><img src={props.img} alt={props.name} style={{width: 200, height: 200}}></img></p>
-      {/* <button onClick={handleSellTea}>Sell</button>
-      <button onClick={handleRestockTea}>Restock</button> */}
-      <hr />
       </button>
-      </>  
+    </div>  
   );
 }
 

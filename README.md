@@ -1,24 +1,25 @@
+# Bubble Tea Order Management Site :tea:
 
-# Merchant site 
-
-#### A movie site
+#### A merchant site that allows user to manage the bubble tea order with full CRUD functionality 
 
 #### By **Jieun Kang and Jiwon Han**
 
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![LastCommit](https://img.shields.io/github/last-commit/jiwon-seattle/merchant-site)
-![Languages](https://img.shields.io/github/languages/top/jiwon-seattle/merchant-site)
+![LastCommit](https://img.shields.io/github/last-commit/jiwon-seattle/Bubble-tea-order-management-site)
+![Languages](https://img.shields.io/github/languages/top/jiwon-seattle/Bubble-tea-order-management-site)
 [![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
 
 
-## 1. Description
+## 1. User Flow
 
-A website for selling movie CD <br>
-A user should be able to do the following:
-<li>Create, Read, Update and Delete items in the store. Items should have fields for name, description, and quantity (along with any other fields you wish to add).</li>
-<li>Increase or decrease the quantity of an item in the store. For instance, if a user clicks "Buy", the quantity will decrease by one. If a user clicks "Restock", it will increment by a specified number.</li>
-<li>When the quantity of an item is reduced to 0, the item should say "Out of Stock". A user should not be able to reduce the quantity of an item below 0.</li>
+This is a bubble tea order site with create/read/update/delete functionality. A desirable user would be employeer or employees in bubble tea shop.
 
+1. A user is able to create new bubble tea in the system.
+2. A user is able to check each bubble tea's detail.
+3. A user is able to update quantities as per order status.
+4. A user is able to see if bubble tea is out of stock as message shown.
+5. A user is able to restock bubble tea and the out of stock message disappear.
+6. A user is able to delete a bubble tea item. 
 
 ### Sreenshot
 
@@ -28,12 +29,15 @@ A user should be able to do the following:
 ### Tech stack:
 + [NPM](https://www.npmjs.com/) for package management
 + [react](https://reactjs.org/) as core stack
++ [drawio](https://app.diagrams.net/) for diagram
++ [favicon](https://www.favicon-generator.org/) for a bubble tea favicon
 
 ### To run dev mode locally:
 ```bash
-  $ git clone https://github.com/jiwon-seattle/Bubble-tea-shop.git
+  $ git clone https://github.com/jiwon-seattle/Bubble-tea-order-management-site.git
   $ cd merchant-site
   $ npm install  
+  $ npm install react-bootstrap bootstrap
   # After successfull pkg installtion
   $ npm start
 ```
