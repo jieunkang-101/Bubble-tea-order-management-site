@@ -23,10 +23,10 @@ This is a bubble tea order site with create/read/update/delete functionality. A 
 
 ### Future improvements
 
-1.Database such as firebase
-2.React Router for dynamical connection with each components
-3.Upper-most control component for easy controlling other children
-4.Chart function
+1. Database such as firebase
+2. React Router for dynamical connection with each components
+3. Upper-most control component for easy controlling other children
+4. Chart function
 
 ### Diagram
 
