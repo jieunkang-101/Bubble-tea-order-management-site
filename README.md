@@ -1,6 +1,6 @@
 # Bubble Tea Order Management Site :tea:
 
-#### A merchant site that allows user to manage the bubble tea order with full CRUD functionality 
+#### A merchant site that allows user to manage the bubble tea order with full CRUD functionality 4.22-4.23.2020
 
 #### By **Jieun Kang and Jiwon Han**
 
