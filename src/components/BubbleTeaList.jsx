@@ -1,8 +1,6 @@
 import React from "react";
 import BubbleTea from "./BubbleTea";
 import PropTypes from "prop-types";
-import { v4 } from 'uuid';
-
 
 function BubbleTeaList(props) {
   return(
@@ -17,11 +15,7 @@ function BubbleTeaList(props) {
           message = {bubbleTea.message}
           whenBubbleTeaSelected = {props.onBubbleTeaSelection}
           whenSellClicked={props.onSellingTea}
-          //WhenRestockClicked={props.onRestockingTea}
-          />
-          // id = {index}
-          // key = {bubbleTea.key}
-          
+          />     
   )}
   </>
   );

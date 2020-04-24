@@ -1,10 +1,8 @@
 import React from 'react';
 import BubbleTeaList from './BubbleTeaList';
 import NewBubbleTeaForm from './NewBubbleTeaForm';
-import NavBar from './NavBar';
 import { v4 } from 'uuid';
 import BubbleTeaDetail from './BubbleTeaDetail';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 class BubbleTeaControl extends React.Component {
 
@@ -71,20 +69,12 @@ class BubbleTeaControl extends React.Component {
     }
   }
 
-
   handleChangingSelectedBubbleTea = (id) => {
     const selectedBubbleTea = this.state.masterBubbleTeaList.filter(bubbleTea => bubbleTea.id === id)[0];
     console.log('selected bubble tea' + selectedBubbleTea);
     console.log('selected bubble tea id ' + id);
     this.setState({selectedBubbleTea : selectedBubbleTea});
   }
-
-  // handleRestockTea = (id) => {
-  //   const selectedBubbleTea = this.state.masterBubbleTeaList.filter(bubbleTea => bubbleTea.id === id)[0];
-  //   console.log("quantity", this.state.selectedBubbleTea.quantity);
-  //   this.state.selectedBubbleTea.quantity += 10;
-  //   this.setState({selectedBubbleTea: selectedBubbleTea});
-  // }
 
   handleRestockTea = (bubbleTeaToRestock) => {
     this.state.selectedBubbleTea.message = "Available";
@@ -111,15 +101,6 @@ class BubbleTeaControl extends React.Component {
     this.setState({formVisibleOnPage: false});
   }
 
-
-  // handleSellTea = (name) => {
-  //   console.log('sell' + name);
-  //   let newBubbleTeaList = this.state.masterBubbleTeaList;
-  //   newBubbleTeaList[name].quantity --;
-  //   this.setState({masterBubbleTeaList: newBubbleTeaList});
-  // }
-
-
   setVisibility  = () => {
     if (this.state.selectedBubbleTea != null) {
       return {
@@ -139,7 +120,6 @@ class BubbleTeaControl extends React.Component {
     }
   };
 
-
   render() {
     console.log(this.state)
     
@@ -157,14 +137,6 @@ class BubbleTeaControl extends React.Component {
       <div class="bubbleCurrent">
         {currentlyVisibleState.order}
       </div>
-      
-      {/* <div>
-        <NavBar />
-        <Switch>
-          <Route exact path='/' render={()=> <BubbleTeaList bubbleTeaList={this.state.masterBubbleTeaList} />} />
-          <Route path='/addTea' render={() => <NewBubbleTeaForm onNewBubbleTeaCreation={this.handleAddingNewBubbleTeaToList} />} />
-        </Switch>
-      </div>     */}
       </>
     );
   }  

@@ -3,21 +3,6 @@ import PropTypes from 'prop-types';
 import './App.css';
 
 function BubbleTea(props) {
-
-  // function handleSellTea() {
-  //   props.whenSellClicked(props.id)
-  // }
-
-  // function handleRestockTea() {
-  //   props.whenRestockClicked(props.id)
-  // }
-
-  // function handleChangingSelectedBubbleTea() {
-  //   prop.whenBubbleTeaSelected(props.id)
-  // }
-
-  // <div onClick = {() => props.whenTicketClicked(props.id)}></div>
-  
   return (
     <div class="bubbleTeaBody">
       <button class="bubbleTeaList" onClick = {() => props.whenBubbleTeaSelected(props.id)}>
@@ -38,8 +23,6 @@ BubbleTea.prototype={
   img: PropTypes.string.isRequired,
   id: PropTypes.string,
   whenBubbleTeaSelected: PropTypes.func
-  // sellTea: PropTypes.func,
-  // restockTea: PropTypes.func
 };
 
 export default BubbleTea;

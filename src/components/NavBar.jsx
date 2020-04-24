@@ -1,7 +1,4 @@
 import React from 'react';
-import BubbleTeaControl from './BubbleTeaControl';
-import BubbleTeaDetail from './BubbleTeaDetail';
-//import { HashRouter, Route } from "react-router-dom";
 
 function NavBar(props){
   return (

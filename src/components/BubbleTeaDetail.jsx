@@ -4,10 +4,6 @@ import PropTypes from "prop-types"
 function BubbleTeaDetail(props){
   const { bubbleTea, onRestockingTea, onSellingTea, onDeletingTea } =props;
 
-  // if ({bubbleTea.quantity} < 1) {
-  //   return {bubbleTea.quantity} == "Out of Stock";
-  // }
-
   return (
     <React.Fragment>
       <div className="BubbleTeaDetail">
