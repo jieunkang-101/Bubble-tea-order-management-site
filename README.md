@@ -12,7 +12,7 @@
 
 ## 1. User Flow
 
-This is a bubble tea order site with create/read/update/delete functionality. A desirable user would be employeer or employees in bubble tea shop.
+This is a bubble tea order site with create/read/update/delete functionality. A desirable user would be a employeer or employees in bubble tea shop.
 
 1. A user is able to create new bubble tea in the system.
 2. A user is able to check each bubble tea's detail.
