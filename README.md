@@ -1,6 +1,6 @@
 # Bubble Tea Order Management Site :tea:
 
-#### A merchant site that allows user to manage the bubble tea order with full CRUD functionality 
+#### A merchant site that allows user to manage the bubble tea order with full CRUD functionality 4.22-4.23.2020
 
 #### By **Jieun Kang and Jiwon Han**
 
@@ -12,7 +12,7 @@
 
 ## 1. User Flow
 
-This is a bubble tea order site with create/read/update/delete functionality. A desirable user would be employeer or employees in bubble tea shop.
+This is a bubble tea order site with create/read/update/delete functionality. A desirable user would be a employer or employees in bubble tea shop.
 
 1. A user is able to create new bubble tea in the system.
 2. A user is able to check each bubble tea's detail.
@@ -21,9 +21,22 @@ This is a bubble tea order site with create/read/update/delete functionality. A 
 5. A user is able to restock bubble tea and the out of stock message disappear.
 6. A user is able to delete a bubble tea item. 
 
-### Sreenshot
+### Future improvements
+
+1.Database such as firebase
+2.React Router for dynamical connection with each components
+3.Upper-most control component for easy controlling other children
+4.Chart function
+
+### Diagram
 
 <img src="src/img/diagram.jpg" width="550px" />
+
+App has NavBar and BubbleTeaControl and Footer components comprehensively. BubbleTea control is a global component for BubbleTeaList, NewBubbleTeaForm and BubbleTeaDetail components. Those children components could connect via their parent control. 
+
+### Sreenshot
+
+<img src="src/img/bubbleTeaSite.gif" width="550px" />
 
 ## 2. Development
 ### Tech stack:
@@ -37,7 +50,6 @@ This is a bubble tea order site with create/read/update/delete functionality. A 
   $ git clone https://github.com/jiwon-seattle/Bubble-tea-order-management-site.git
   $ cd merchant-site
   $ npm install  
-  $ npm install react-bootstrap bootstrap
   # After successfull pkg installtion
   $ npm start
 ```
@@ -49,7 +61,7 @@ There are no known bug at this moment
 
 ## 4. Support and contact details
 
-Any feedback is appreciated! Please contact at email: Jieun Kang jieunkang101@gmail.com or jiwon1.han@gmail.com
+Any feedback is appreciated! Please contact at email: jieunkang101@gmail.com or jiwon1.han@gmail.com
 
 ### License
 
