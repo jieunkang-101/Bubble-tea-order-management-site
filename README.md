@@ -23,7 +23,7 @@ This is a bubble tea order site with create/read/update/delete functionality. A 
 
 ### Sreenshot
 
-<img src="src/img/movie-site.jpg" width="550px" />
+<img src="src/img/diagram.jpg" width="550px" />
 
 ## 2. Development
 ### Tech stack:
