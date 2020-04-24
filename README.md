@@ -43,6 +43,7 @@ App has NavBar and BubbleTeaControl and Footer components comprehensively. Bubbl
 + [NPM](https://www.npmjs.com/) for package management
 + [react](https://reactjs.org/) as core stack
 + [drawio](https://app.diagrams.net/) for diagram
++ [bootstrap](https://getbootstrap.com/)
 + [favicon](https://www.favicon-generator.org/) for a bubble tea favicon
 
 ### To run dev mode locally:
