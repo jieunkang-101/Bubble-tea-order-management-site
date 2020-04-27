@@ -1,12 +1,13 @@
 # Bubble Tea Order Management Site :tea:
 
 #### A merchant site that allows user to manage the bubble tea order with full CRUD functionality 4.22-4.23.2020
+#### Refactor to use Redux for shared state 4.27.2020
 
 #### By **Jieun Kang and Jiwon Han**
 
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![LastCommit](https://img.shields.io/github/last-commit/jiwon-seattle/Bubble-tea-order-management-site)
-![Languages](https://img.shields.io/github/languages/top/jiwon-seattle/Bubble-tea-order-management-site)
+![LastCommit](https://img.shields.io/github/last-commit/jieunkang-101/Bubble-tea-order-management-site)
+![Languages](https://img.shields.io/github/languages/top/jieunkang-101/Bubble-tea-order-management-site)
 [![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
 
 
